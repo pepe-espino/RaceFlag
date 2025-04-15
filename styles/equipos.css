@@ -146,7 +146,7 @@ main{
 }
 
 .card1 .front{
-    background-image: url(/imgs/pilotosCarousel/norris.avif);
+    background-image: url(../imgs/pilotosCarousel/norris.avif);
     background-size: cover;
     background-position: center;
 }
@@ -183,7 +183,7 @@ main{
 }
 
 .card2 .front{
-    background-image: url(/imgs/pilotosCarousel/piastri.avif);
+    background-image: url(../imgs/pilotosCarousel/piastri.avif);
     background-size: cover;
     background-position: center;
 }
@@ -221,7 +221,7 @@ main{
 }
 
 .card3 .front{
-    background-image: url(/imgs/pilotosCarousel/leclerc.avif);
+    background-image: url(../imgs/pilotosCarousel/leclerc.avif);
     background-size: cover;
     background-position: center;
 }
@@ -258,7 +258,7 @@ main{
 }
 
 .card4 .front{
-    background-image: url(/imgs/pilotosCarousel/hamilton.avif);
+    background-image: url(../imgs/pilotosCarousel/hamilton.avif);
     background-size: cover;
     background-position: center;
 }
@@ -294,7 +294,7 @@ main{
 }
 
 .card5 .front{
-    background-image: url(/imgs/pilotosCarousel/verstappen.avif);
+    background-image: url(../imgs/pilotosCarousel/verstappen.avif);
     background-size: cover;
     background-position: center;
 }
@@ -329,7 +329,7 @@ main{
 }
 
 .card6 .front{
-    background-image: url(/imgs/pilotosCarousel/tsunoda.avif);
+    background-image: url(../imgs/pilotosCarousel/tsunoda.avif);
     background-size: cover;
     background-position: center;
 }
@@ -367,7 +367,7 @@ main{
 }
 
 .card7 .front{
-    background-image: url(/imgs/pilotosCarousel/russell.avif);
+    background-image: url(../imgs/pilotosCarousel/russell.avif);
     background-size: cover;
     background-position: center;
 }
@@ -405,7 +405,7 @@ main{
 }
 
 .card8 .front{
-    background-image: url(/imgs/pilotosCarousel/antonelli.avif);
+    background-image: url(../imgs/pilotosCarousel/antonelli.avif);
     background-size: cover;
     background-position: center;
 }
@@ -443,7 +443,7 @@ main{
 }
 
 .card9 .front{
-    background-image: url(/imgs/pilotosCarousel/alonso.avif);
+    background-image: url(../imgs/pilotosCarousel/alonso.avif);
     background-size: cover;
     background-position: center;
 }
@@ -481,7 +481,7 @@ main{
 }
 
 .card10 .front{
-    background-image: url(/imgs/pilotosCarousel/stroll.avif);
+    background-image: url(../imgs/pilotosCarousel/stroll.avif);
     background-size: cover;
     background-position: center;
 }
@@ -519,7 +519,7 @@ main{
 }
 
 .card11 .front{
-    background-image: url(/imgs/pilotosCarousel/gasly.avif);
+    background-image: url(../imgs/pilotosCarousel/gasly.avif);
     background-size: cover;
     background-position: center;
 }
@@ -557,7 +557,7 @@ main{
 }
 
 .card12 .front{
-    background-image: url(/imgs/pilotosCarousel/doohan.avif);
+    background-image: url(../imgs/pilotosCarousel/doohan.avif);
     background-size: cover;
     background-position: center;
 }
@@ -595,7 +595,7 @@ main{
 }
 
 .card13 .front{
-    background-image: url(/imgs/pilotosCarousel/ocon.avif);
+    background-image: url(../imgs/pilotosCarousel/ocon.avif);
     background-size: cover;
     background-position: center;
 }
@@ -633,7 +633,7 @@ main{
 }
 
 .card14 .front{
-    background-image: url(/imgs/pilotosCarousel/bearman.avif);
+    background-image: url(../imgs/pilotosCarousel/bearman.avif);
     background-size: cover;
     background-position: center;
 }
@@ -671,7 +671,7 @@ main{
 }
 
 .card15 .front{
-    background-image: url(/imgs/pilotosCarousel/hadjar.avif);
+    background-image: url(../imgs/pilotosCarousel/hadjar.avif);
     background-size: cover;
     background-position: center;
 }
@@ -709,7 +709,7 @@ main{
 }
 
 .card16 .front{
-    background-image: url(/imgs/pilotosCarousel/lawson-racing-bulls.avif);
+    background-image: url(../imgs/pilotosCarousel/lawson-racing-bulls.avif);
     background-size: cover;
     background-position: center;
 }
@@ -747,7 +747,7 @@ main{
 }
 
 .card17 .front{
-    background-image: url(/imgs/pilotosCarousel/albon.avif);
+    background-image: url(../imgs/pilotosCarousel/albon.avif);
     background-size: cover;
     background-position: center;
 }
@@ -785,7 +785,7 @@ main{
 }
 
 .card18 .front{
-    background-image: url(/imgs/pilotosCarousel/sainz.avif);
+    background-image: url(../imgs/pilotosCarousel/sainz.avif);
     background-size: cover;
     background-position: center;
 }
@@ -823,7 +823,7 @@ main{
 }
 
 .card19 .front{
-    background-image: url(/imgs/pilotosCarousel/hulkenberg.avif);
+    background-image: url(../imgs/pilotosCarousel/hulkenberg.avif);
     background-size: cover;
     background-position: center;
 }
@@ -861,7 +861,7 @@ main{
 }
 
 .card20 .front{
-    background-image: url(/imgs/pilotosCarousel/bortoleto.avif);
+    background-image: url(../imgs/pilotosCarousel/bortoleto.avif);
     background-size: cover;
     background-position: center;
 }
