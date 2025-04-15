@@ -1,0 +1,964 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+header{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 4px solid rgb(255, 77, 77);
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li{
+    margin: 0 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.menu li:hover, a:hover{
+    cursor: pointer;
+    color: rgb(255, 77, 77);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 154px;
+}
+
+.carousel{
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 20px 35px 35px rgba(0, 0, 0, 0.5); 
+    border-bottom: 4px solid rgb(255, 77, 77);
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.imagenesCarousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-content: stretch;
+    animation: animation 100s linear infinite;
+}
+
+.imagenesCarousel div{
+    width: 200px;
+    height: 270px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@keyframes animation{
+    to{
+        translate: calc(-4*765px);
+    }
+}
+
+/* cards */
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16, .card17, .card18, .card19, .card20{
+    width: 360px;
+    height: 530px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.back .bandera{
+    width: 20%;
+}
+
+.card-content p, .card-content h3, .card-content h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.trofeo{
+    width: 8%;
+}
+
+/* card1 */
+
+.card1:hover{
+    transform: rotateY(180deg);
+}
+
+.card1 .front, .card1 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card1 .front{
+    background-image: url(/imgs/pilotosCarousel/norris.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.card1 .back{
+    background: linear-gradient(to right,rgb(177, 94, 0), #ffab4b);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+
+/* card2 */
+
+.card2:hover{
+    transform: rotateY(180deg);
+}
+
+.card2 .front, .card2 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card2 .front{
+    background-image: url(/imgs/pilotosCarousel/piastri.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card2 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card2 .back{
+    background: linear-gradient(to right,rgb(177, 94, 0), #ffab4b);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card3 */
+
+.card3:hover{
+    transform: rotateY(180deg);
+}
+
+.card3 .front, .card3 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card3 .front{
+    background-image: url(/imgs/pilotosCarousel/leclerc.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card3 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card3 .back{
+    background: linear-gradient(to right,rgb(117, 1, 1), #b33535);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card4 */
+
+.card4:hover{
+    transform: rotateY(180deg);
+}
+
+.card4 .front, .card4 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card4 .front{
+    background-image: url(/imgs/pilotosCarousel/hamilton.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card4 .card-info{
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card4 .back{
+    background: linear-gradient(to right,rgb(117, 1, 1), #b33535);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card5 */
+
+.card5:hover{
+    transform: rotateY(180deg);
+}
+
+.card5 .front, .card5 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card5 .front{
+    background-image: url(/imgs/pilotosCarousel/verstappen.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card5 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.card5 .back{
+    background: linear-gradient(to right,rgb(0, 22, 119), #314c80);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+/* card6 */
+
+.card6:hover{
+    transform: rotateY(180deg);
+}
+
+.card6 .front, .card6 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card6 .front{
+    background-image: url(/imgs/pilotosCarousel/tsunoda.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card6 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card6 .back{
+    background: linear-gradient(to right,rgb(0, 22, 119), #314c80);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card7 */
+
+.card7:hover{
+    transform: rotateY(180deg);
+}
+
+.card7 .front, .card7 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card7 .front{
+    background-image: url(/imgs/pilotosCarousel/russell.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card7 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card7 .back{
+    background: linear-gradient(to right,rgb(45, 104, 91), #12cabb);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card8 */
+
+.card8:hover{
+    transform: rotateY(180deg);
+}
+
+.card8 .front, .card8 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card8 .front{
+    background-image: url(/imgs/pilotosCarousel/antonelli.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card8 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card8 .back{
+    background: linear-gradient(to right,rgb(45, 104, 91), #12cabb);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card9 */
+
+.card9:hover{
+    transform: rotateY(180deg);
+}
+
+.card9 .front, .card9 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card9 .front{
+    background-image: url(/imgs/pilotosCarousel/alonso.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card9 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card9 .back{
+    background: linear-gradient(to right,rgb(45, 104, 91), #50995a);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card10 */
+
+.card10:hover{
+    transform: rotateY(180deg);
+}
+
+.card10 .front, .card10 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card10 .front{
+    background-image: url(/imgs/pilotosCarousel/stroll.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card10 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card10 .back{
+    background: linear-gradient(to right,rgb(45, 104, 91), #50995a);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card11 */
+
+.card11:hover{
+    transform: rotateY(180deg);
+}
+
+.card11 .front, .card11 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card11 .front{
+    background-image: url(/imgs/pilotosCarousel/gasly.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card11 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card11 .back{
+    background: linear-gradient(to right,rgb(2, 94, 110), #d180f1);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card12 */
+
+.card12:hover{
+    transform: rotateY(180deg);
+}
+
+.card12 .front, .card12 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card12 .front{
+    background-image: url(/imgs/pilotosCarousel/doohan.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card12 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card12 .back{
+    background: linear-gradient(to right,rgb(2, 94, 110), #d180f1);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card13 */
+
+.card13:hover{
+    transform: rotateY(180deg);
+}
+
+.card13 .front, .card13 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card13 .front{
+    background-image: url(/imgs/pilotosCarousel/ocon.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card13 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card13 .back{
+    background: linear-gradient(to right,rgb(122, 122, 122), #ffa4a4);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card14 */
+
+.card14:hover{
+    transform: rotateY(180deg);
+}
+
+.card14 .front, .card14 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card14 .front{
+    background-image: url(/imgs/pilotosCarousel/bearman.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card14 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card14 .back{
+    background: linear-gradient(to right,rgb(122, 122, 122), #ffa4a4);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card15 */
+
+.card15:hover{
+    transform: rotateY(180deg);
+}
+
+.card15 .front, .card15 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card15 .front{
+    background-image: url(/imgs/pilotosCarousel/hadjar.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card15 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card15 .back{
+    background: linear-gradient(to right,rgb(0, 149, 168), #c2c2c2);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card16 */
+
+.card16:hover{
+    transform: rotateY(180deg);
+}
+
+.card16 .front, .card16 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card16 .front{
+    background-image: url(/imgs/pilotosCarousel/lawson-racing-bulls.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card16 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card16 .back{
+    background: linear-gradient(to right,rgb(0, 149, 168), #c2c2c2);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card17 */
+
+.card17:hover{
+    transform: rotateY(180deg);
+}
+
+.card17 .front, .card17 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card17 .front{
+    background-image: url(/imgs/pilotosCarousel/albon.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card17 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card17 .back{
+    background: linear-gradient(to right,rgb(0, 50, 124), #3d91ff);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card18 */
+
+.card18:hover{
+    transform: rotateY(180deg);
+}
+
+.card18 .front, .card18 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card18 .front{
+    background-image: url(/imgs/pilotosCarousel/sainz.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card18 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card18 .back{
+    background: linear-gradient(to right,rgb(0, 50, 124), #3d91ff);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card19 */
+
+.card19:hover{
+    transform: rotateY(180deg);
+}
+
+.card19 .front, .card19 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card19 .front{
+    background-image: url(/imgs/pilotosCarousel/hulkenberg.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card19 .card-info{
+    bottom: 50px;
+    left: 45px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px black;
+    text-align: center;
+}
+
+.card19 .back{
+    background: linear-gradient(to right,rgb(0, 170, 9), #396835);
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+/* card20 */
+
+.card20:hover{
+    transform: rotateY(180deg);
+}
+
+.card20 .front, .card20 .back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card20 .front{
+    background-image: url(/imgs/pilotosCarousel/bortoleto.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.card20 .card-info{
+    bottom: 50px;
+    left: 45px;
+    text-align: center;
+}
+
+.card20 .back{
+    background: linear-gradient(to right,rgb(0, 170, 9), #396835);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px black;
+}
+
+
+/*titulo*/
+
+h1{
+    font-size: 40px;
+    color: rgb(31, 31, 31);
+    margin: 20px 0;
+    border-bottom: 4px solid  rgba(0, 0, 0, 0.281);
+    border-right: 4px solid  rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* equipos */
+
+.equipos{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 30% 30% 30% 30%; 
+    gap: 20px;
+}
+
+.mclaren{
+    background-color: orange;
+}
+
+.redbull{
+    background-color: rgb(0, 15, 155);
+}
+
+.ferrari{
+    background-color: red;
+}
+
+.alpine{
+    background-color: rgb(238, 95, 226);
+}
+
+.mercedes{
+    background-color: rgb(112, 128, 129);
+}
+
+.aston{
+    background-color: rgb(35, 95, 0);
+}
+
+.sauber{
+    background-color: rgb(43, 255, 0);
+}
+
+.haas{
+    background-color: rgb(185, 185, 185);
+}
+
+.williams{
+    background-color: rgb(0, 0, 255);
+}
+
+.rb{
+    background-color: rgb(230, 189, 189);
+}
+
+
+
+/* footer */
+
+footer{
+    margin-top: 500px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border-top: 4px solid rgb(255, 77, 77);
+}

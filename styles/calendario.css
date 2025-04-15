@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+header{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 4px solid rgb(255, 77, 77);
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li{
+    margin: 0 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.menu li:hover, .menu a:hover{
+    cursor: pointer;
+    color: rgb(255, 77, 77);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+/* main */
+
+main{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.titulos{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(255, 77, 77);
+    align-items: flex-start;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+.terminadas, .proximas, .siguiente{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.siguiente{
+  background-color: rgb(31, 31, 31);
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 10px rgb(28, 97, 1);
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 1500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.siguiente .tarjeta{
+  background-color: rgba(73, 72, 72, 0.61);
+  color: white;
+  width: 260px;
+  padding: 15px;
+  box-shadow: 6px 6px 10px rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+.terminadas .tarjeta , .proximas .tarjeta{
+    background: white;
+    border: 1px solid #ccc;
+    width: 260px;
+    padding: 15px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.322);
+    border-bottom: 4px solid rgb(167, 167, 167);
+    border-right: 4px solid rgb(167, 167, 167);
+    border-radius: 12px;
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    border-right: 2px solid rgb(167, 167, 167);
+    border:2px solid rgb(255, 77, 77);
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ronda {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.bandera {
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  object-fit: cover;
+}
+
+.fecha {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.fecha h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.mes {
+  font-size: 14px;
+  color: #ffffffcb;
+  margin: 5px 0 0 0;
+}
+
+.info {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px solid #e0dfdf;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.flecha {
+  color: red;
+}
+
+.info p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.imagen-circuito {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.imagen-circuito img {
+  width: 100%;
+}
+
+
+/* horarios */
+
+.textoCarrera{
+  background-color: rgba(73, 72, 72, 0.61);
+  color: white;
+  padding: 20px;
+  width: 65%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoCarrera h3{
+  justify-self: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  border-bottom: 4px solid rgb(255, 77, 77);
+  border-top: 4px solid rgb(255, 77, 77);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.horarios{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  gap: 40px;
+  width: 100%;
+}
+
+.horarios h4{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.dias{
+  border-bottom: 3px solid rgba(255, 255, 255, 0.281);
+  border-right: 3px solid rgba(255, 255, 255, 0.219);
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+}
+
+.dias .bef{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border-top: 4px solid rgb(255, 77, 77);
+}
