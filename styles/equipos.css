@@ -892,67 +892,147 @@ h1{
     border-right: 4px solid  rgba(0, 0, 0, 0.281);
     padding: 10px;
     border-radius: 12px;
+    margin-bottom: 60px;
 }
 
 /* equipos */
 
+.campeon{
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
 .equipos{
-    margin-top: 40px;
     display: flex;
     justify-content: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 30% 30% 30% 30%; 
-    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
-.mclaren{
-    background-color: orange;
+/* tarjetas equipos */
+
+.tarjeta-equipo {
+    background: white;
+    border: 1px solid #ccc;
+    width: 400px;
+    padding: 15px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.459);
+    border-radius: 12px;
 }
 
-.redbull{
-    background-color: rgb(0, 15, 155);
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
-.ferrari{
-    background-color: red;
+.puntos {
+  font-size: 16px;
+  color: #000;
 }
 
-.alpine{
-    background-color: rgb(238, 95, 226);
+.mclaren, .mercedes, .ferrari, .redbull, .aston, .haas, .williams, .rb, .alpine, .sauber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.mercedes{
-    background-color: rgb(112, 128, 129);
+.mclaren h2{
+  margin: 0;
+  color: #f27300;
 }
 
-.aston{
-    background-color: rgb(35, 95, 0);
+.mercedes h2{
+    margin: 0;
+    color: #09beaf;
 }
 
-.sauber{
-    background-color: rgb(43, 255, 0);
+.ferrari h2{
+  margin: 0;
+  color: #ff0000;
 }
 
-.haas{
-    background-color: rgb(185, 185, 185);
+.redbull h2{
+  margin: 0;
+  color: #1d006d;
 }
 
-.williams{
-    background-color: rgb(0, 0, 255);
+.aston h2{
+  margin: 0;
+  color: #1c6643;
 }
 
-.rb{
-    background-color: rgb(230, 189, 189);
+.haas h2{
+  margin: 0;
+  color: #949494;
 }
 
+.williams h2{
+  margin: 0;
+  color: #004696;
+}
+
+.rb h2{
+  margin: 0;
+  color: #0066ff;
+}
+
+.sauber h2{
+  margin: 0;
+  color: #25bb00;
+}
+
+.alpine h2{
+  margin: 0;
+  color: #0f95e2;
+}
+
+.mclaren img, .mercedes img, .ferrari img, .redbull img, .aston img, .haas img, .williams img, .rb img, .alpine img, .sauber img {
+  height: 35px;
+}
+
+.pilotos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.piloto {
+  text-align: center;
+  width: 48%;
+}
+
+.piloto img {
+  width: 100px;
+  margin-top: 5px;
+  border-radius: 8%;
+}
+
+.imagen-coche {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.imagen-coche img {
+  width: 100%;
+}
 
 
 /* footer */
 
 footer{
-    margin-top: 500px;
+    margin-top: 60px;
     background-color: rgb(31, 31, 31);
     display: flex;
     flex-direction: column;
