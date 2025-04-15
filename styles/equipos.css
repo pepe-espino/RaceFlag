@@ -146,7 +146,7 @@ main{
 }
 
 .card1 .front{
-    background-image: url(./imgs/pilotosCarousel/norris.avif);
+    background-image: url(../imgs/pilotosCarousel/norris.avif);
     background-size: cover;
     background-position: center;
 }
@@ -183,7 +183,7 @@ main{
 }
 
 .card2 .front{
-    background-image: url(imgs/pilotosCarousel/piastri.avif);
+    background-image: url(../imgs/pilotosCarousel/piastri.avif);
     background-size: cover;
     background-position: center;
 }
