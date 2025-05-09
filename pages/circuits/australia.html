@@ -6,7 +6,12 @@
     <title>GP de Australia 2025</title>
     <link rel="stylesheet" href="../../styles/circuits.css">
     <link rel="icon" href="../../imgs/icons/bandera-de-objetivo.png">
-
+    <script src="../../scripts/resultadogp.js"></script>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,6 +62,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="resultado">
+            <h2>Resultado del Gran Premio</h2>
+            <ul id="clasificacion">
+                <li style="font-weight: bold;">1º Lando Norris</li>
+                <li id="par" style="font-weight: bold;">2º Max Verstappen</li>
+                <li style="font-weight: bold;">3º George Russell</li>
+                <li  id="par"class="oculto">4º Kimi Antonelli</li>
+                <li class="oculto">5º Alexander Albon</li>
+                <li  id="par"class="oculto">6º Lance Stroll</li>
+                <li class="oculto">7º Nico Hulkenberg</li>
+                <li  id="par"class="oculto">8º Charles Leclerc</li>
+                <li class="oculto">9º Oscar Piastri</li>
+                <li  id="par"class="oculto">10º Lewis Hamilton</li>
+                <li class="oculto">11º Pierre Gasly</li>
+                <li  id="par"class="oculto">12º Yuki Tsunoda</li>
+                <li class="oculto">13º Esteban Ocon</li>
+                <li  id="par"class="oculto">14º Oliver Bearman</li>
+                <li class="oculto">DNF Liam Lawson</li>
+                <li  id="par"class="oculto">DNF Gabriel Bortoletto</li>
+                <li class="oculto">DNF Fernando Alonso</li>
+                <li  id="par"class="oculto">DNF Carlos Sainz</li>
+                <li class="oculto">DNF Jack Doohan</li>
+                <li  id="par"class="oculto">DNF Isack Hadjar</li>
+            </ul>
+            <button id="botonVerMas" onclick="mostrarMas()">Ver más</button>
+            <button id="botonVerMenos" onclick="mostrarMenos()" class="oculto">Ver menos</button>   
+        </div>
+
         <div class="textoCarrera">
             <h3>Horarios</h3>
             <div class="horarios">

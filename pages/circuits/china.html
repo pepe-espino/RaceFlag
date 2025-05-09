@@ -6,7 +6,12 @@
     <title>GP de China 2025</title>
     <link rel="stylesheet" href="../../styles/circuits.css">
     <link rel="icon" href="../../imgs/icons/bandera-de-objetivo.png">
-
+    <script src="../../scripts/resultadogp.js"></script>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,6 +62,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="resultado">
+            <h2>Resultado del Gran Premio</h2>
+            <ul id="clasificacion">
+                <li style="font-weight: bold;">1º Oscar Piastri</li>
+                <li id="par" style="font-weight: bold;">2º Lando Norris</li>
+                <li style="font-weight: bold;">3º George Russell</li>
+                <li id="par" class="oculto">4º Max Verstappen</li>
+                <li class="oculto">5º Esteban Ocon</li>
+                <li id="par" class="oculto">6º Kimi Antonelli</li>
+                <li class="oculto">7º Alexander Albon</li>
+                <li id="par" class="oculto">8º Oliver Bearman</li>
+                <li class="oculto">9º Lance Stroll</li>
+                <li id="par" class="oculto">10º Carlos Sainz</li>
+                <li class="oculto">11º Isack Hadjar</li>
+                <li id="par" class="oculto">12º Liam Lawson</li>
+                <li class="oculto">13º Jack Doohan</li>
+                <li id="par" class="oculto">14º Gabriel Bortoletto</li>
+                <li class="oculto">15º Nico Hulkenberg</li>
+                <li id="par" class="oculto">16º Yuki Tsunoda</li>
+                <li class="oculto">DNF Fernando Alonso</li>
+                <li id="par" class="oculto">DSQ Charles Leclerc</li>
+                <li class="oculto">DSQ Lewis Hamilton</li>
+                <li id="par" class="oculto">DSQ Pierre Gasly</li>
+            </ul>                        
+            <button id="botonVerMas" onclick="mostrarMas()">Ver más</button>
+            <button id="botonVerMenos" onclick="mostrarMenos()" class="oculto">Ver menos</button>   
+        </div>
+
         <div class="textoCarrera">
             <h3>Horarios</h3>
             <div class="horarios">

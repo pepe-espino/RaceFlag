@@ -116,7 +116,6 @@ main a{
   color: rgb(0, 0, 0);
   width: 260px;
   padding: 15px;
-  box-shadow: 6px 6px 10px rgb(1, 202, 252);
   border-radius: 12px;
 }
 
@@ -212,7 +211,6 @@ main a{
   padding: 20px;
   width: 65%;
   border-radius: 10px;
-  box-shadow: 6px 6px 10px rgb(1, 202, 252);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,6 +260,13 @@ main a{
 .dias .bef{
   font-size: 20px;
   font-weight: 300;
+}
+
+
+/*sombra siguiente carrera */
+
+.textoCarrera, .siguiente .tarjeta{
+  box-shadow: 6px 6px 10px rgb(43, 160, 0);
 }
 
 

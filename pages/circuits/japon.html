@@ -6,7 +6,12 @@
     <title>GP de Japón 2025</title>
     <link rel="stylesheet" href="../../styles/circuits.css">
     <link rel="icon" href="../../imgs/icons/bandera-de-objetivo.png">
-
+    <script src="../../scripts/resultadogp.js"></script>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,6 +62,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="resultado">
+            <h2>Resultado del Gran Premio</h2>
+            <ul id="clasificacion">
+                <li style="font-weight: bold;">1º Max Verstappen</li>
+                <li id="par" style="font-weight: bold;">2º Lando Norris</li>
+                <li style="font-weight: bold;">3º Oscar Piastri</li>
+                <li id="par" class="oculto">4º Charles Leclerc</li>
+                <li class="oculto">5º George Russell</li>
+                <li id="par" class="oculto">6º Kimi Antonelli</li>
+                <li class="oculto">7º Lewis Hamilton</li>
+                <li id="par" class="oculto">8º Isack Hadjar</li>
+                <li class="oculto">9º Alexander Albon</li>
+                <li id="par" class="oculto">10º Oliver Bearman</li>
+                <li class="oculto">11º Fernando Alonso</li>
+                <li id="par" class="oculto">12º Yuki Tsunoda</li>
+                <li class="oculto">13º Pierre Gasly</li>
+                <li id="par" class="oculto">14º Carlos Sainz</li>
+                <li class="oculto">15º Jack Doohan</li>
+                <li id="par" class="oculto">16º Nico Hulkenberg</li>
+                <li class="oculto">17º Liam Lawson</li>
+                <li id="par" class="oculto">18º Esteban Ocon</li>
+                <li class="oculto">19º Gabriel Bortoletto</li>
+                <li id="par" class="oculto">20º Lance Stroll</li>
+            </ul>                                   
+            <button id="botonVerMas" onclick="mostrarMas()">Ver más</button>
+            <button id="botonVerMenos" onclick="mostrarMenos()" class="oculto">Ver menos</button>   
+        </div>
+
         <div class="textoCarrera">
             <h3>Horarios</h3>
             <div class="horarios">
